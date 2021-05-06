@@ -22,7 +22,6 @@ const deleteItem = (state, obj) => {
     state.todoList.splice(obj.index,1);
 }
 const clearAll = (state) => {
-    console.log('clear');
     localStorage.clear();
     state.todoList = [];
 }
